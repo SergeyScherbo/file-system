@@ -1,0 +1,26 @@
+@import 'reset';
+
+$sidebar: #C4C1E0;
+$main-area: #FAFAFA;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 350px;
+  padding: 30px 0 0 30px;
+  background-color: $sidebar;
+  color: #fff;
+}
