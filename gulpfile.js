@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
 
 gulp.task('styles', function() {
   return gulp.src('dev/scss/*.scss')
@@ -14,7 +15,11 @@ gulp.task('copy-html', function() {
     .pipe(gulp.dest('dest'));
 });
 
-gulp.task('watch', function() {
+gulp.task('serve', ['styles'], function() {
+  browserSync.init({
+    server: './dest'
+  });
+
   gulp.watch('dev/scss/*.scss', ['styles']);
-  gulp.watch('dev/*.html', ['copy-html']);
+  gulp.watch('dev/*.html', ['copy-html']).on('change', browserSync.reload);
 });
