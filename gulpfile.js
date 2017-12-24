@@ -20,6 +20,6 @@ gulp.task('serve', ['styles'], function() {
     server: './dest'
   });
 
-  gulp.watch('dev/scss/*.scss', ['styles']);
+  gulp.watch('dev/scss/*.scss', ['styles']).on('change', browserSync.reload);
   gulp.watch('dev/*.html', ['copy-html']).on('change', browserSync.reload);
 });
