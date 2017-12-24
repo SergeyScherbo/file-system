@@ -35,6 +35,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.list__el {
+  display: flex; }
+
 * {
   box-sizing: border-box; }
 
@@ -44,7 +47,8 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: 'Fira Sans'; }
 
 .sidebar {
   height: 100vh;
@@ -52,3 +56,24 @@ body {
   padding: 30px 0 0 30px;
   background-color: #C4C1E0;
   color: #fff; }
+
+.list_inner {
+  padding-left: 20px; }
+
+.list__el {
+  align-items: flex-end;
+  line-height: 2rem; }
+
+.list__el_opened {
+  background-color: #b4b0d8; }
+
+.list__el .icon {
+  width: 21px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  margin-bottom: -1px;
+  color: #7C73E6; }
+
+.list__el--name {
+  font-size: 1.2rem; }

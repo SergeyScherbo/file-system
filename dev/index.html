@@ -7,13 +7,26 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
 <body>
   <aside class="sidebar">
-    <div class="siderbar__el">
-      <i class="fa fa-folder"></i>
-      <span class="sidebar__el--name">Hello, what's up?</span>
-    </div>
+    <ul class="list">
+      <li class="list__el list__el_opened">
+        <span class="icon"><i class="fa fa-folder-open"></i></span>
+        <span class="list__el--name">Folder number one</span>
+      </li>
+      <ul class="list list_inner">
+        <li class="list__el">
+          <span class="icon"><i class="fa fa-folder"></i></span>
+          <span class="list__el--name">First inner folder</span>
+        </li>
+        <li class="list__el">
+          <span class="icon"><i class="fa fa-file"></i></span>
+          <span class="list__el--name">Fire sample</span>
+        </li>
+      </ul>
+    </ul>
   </aside>
 </body>
 </html>

@@ -1,7 +1,9 @@
 @import 'reset';
+@import 'placeholders';
 
 $sidebar: #C4C1E0;
 $main-area: #FAFAFA;
+$icons: #7C73E6;
 
 * {
   box-sizing: border-box;
@@ -15,6 +17,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1rem;
+  font-family: 'Fira Sans';
 }
 
 .sidebar {
@@ -23,4 +26,31 @@ body {
   padding: 30px 0 0 30px;
   background-color: $sidebar;
   color: #fff;
+}
+
+.list_inner {
+  padding-left: 20px;
+}
+
+.list__el {
+  @extend %df;
+  align-items: flex-end;
+  line-height: 2rem;
+}
+
+.list__el_opened {
+  background-color: darken($sidebar, 5%);
+}
+
+.list__el .icon {
+  width: 21px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  margin-bottom: -1px;
+  color: $icons;
+}
+
+.list__el--name {
+  font-size: 1.2rem;
 }
