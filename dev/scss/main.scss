@@ -21,6 +21,10 @@ body {
   font-family: 'Fira Sans';
 }
 
+.page {
+  @extend %df;
+}
+
 .sidebar {
   position: relative;
   height: 100vh;
@@ -72,4 +76,38 @@ body {
   font-size: 1.3rem;
   margin-right: 15px;
   color: $icons;
+}
+
+.main {
+  flex: 1;
+  height: 100vh;
+  padding: 30px;
+  background-color: $main-area;
+}
+
+.main-header {
+  @extend %df;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.element-options {
+  button {
+    font-size: 1.5rem;
+    color: $icons;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.element-info {
+  margin-top: 15px;
+  color: #aaa;
 }

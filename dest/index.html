@@ -10,42 +10,53 @@
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
 <body>
-  <aside class="sidebar">
-
-    <ul>
-      <li>
-        <div class="list-el--outer">
-          <div class="list-el--inner"><span class="list-icon"><i class="fa fa-folder"></i></span>First element</div>
+  <div class="page">
+    <aside class="sidebar">
+      <ul>
+        <li>
+          <div class="list-el--outer">
+            <div class="list-el--inner"><span class="list-icon"><i class="fa fa-folder"></i></span>First element</div>
+          </div>
+        </li>
+        <li>
+          <div class="list-el--outer">
+            <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Second element</div>
+          </div>
+        </li>
+        <li>
+          <div class="list-el--outer">
+            <div class="list-el--inner"><span class="list-icon"><i class="fa fa-folder-open"></i></span>Third element</div>
+          </div>
+          <ul class="list--inner">
+            <li>
+              <div class="list-el--outer">
+                <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner first</div>
+              </div>
+            </li>
+            <li>
+              <div class="list-el--outer">
+                <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner second</div>
+              </div>
+            </li>
+            <li>
+              <div class="list-el--outer">
+                <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner third</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main class="main">
+      <header class="main-header">
+        <div class="element-name">Folder number one</div>
+        <div class="element-options">
+          <button><i class="fa fa-save"></i></button>
+          <button><i class="fa fa-trash"></i></button>
         </div>
-      </li>
-      <li>
-        <div class="list-el--outer">
-          <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Second element</div>
-        </div>
-      </li>
-      <li>
-        <div class="list-el--outer">
-          <div class="list-el--inner"><span class="list-icon"><i class="fa fa-folder-open"></i></span>Third element</div>
-        </div>
-        <ul class="list--inner">
-          <li>
-            <div class="list-el--outer">
-              <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner first</div>
-            </div>
-          </li>
-          <li>
-            <div class="list-el--outer">
-              <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner second</div>
-            </div>
-          </li>
-          <li>
-            <div class="list-el--outer">
-              <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner third</div>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </aside>
+      </header>
+      <div class="element-info">0 KB</div>
+    </main>
+  </div>
 </body>
 </html>

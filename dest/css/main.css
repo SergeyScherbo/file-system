@@ -35,6 +35,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none; }
+
+.page, .main-header {
+  display: flex; }
+
 * {
   box-sizing: border-box; }
 
@@ -88,3 +97,28 @@ body {
   font-size: 1.3rem;
   margin-right: 15px;
   color: #7C73E6; }
+
+.main {
+  flex: 1;
+  height: 100vh;
+  padding: 30px;
+  background-color: #FAFAFA; }
+
+.main-header {
+  justify-content: space-between;
+  align-items: center; }
+
+.element-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333; }
+
+.element-options button {
+  font-size: 1.5rem;
+  color: #7C73E6; }
+  .element-options button:not(:last-of-type) {
+    margin-right: 15px; }
+
+.element-info {
+  margin-top: 15px;
+  color: #aaa; }
