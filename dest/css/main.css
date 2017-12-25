@@ -35,9 +35,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.list__el {
-  display: flex; }
-
 * {
   box-sizing: border-box; }
 
@@ -51,29 +48,43 @@ body {
   font-family: 'Fira Sans'; }
 
 .sidebar {
+  position: relative;
   height: 100vh;
   width: 350px;
   padding: 30px 0 0 30px;
   background-color: #C4C1E0;
   color: #fff; }
 
-.list_inner {
+.list-el--outer {
+  position: relative; }
+  .list-el--outer:before {
+    opacity: 0;
+    visibility: hidden;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 2.5rem;
+    background-color: #b7b3d9; }
+  .list-el--outer:hover:before {
+    opacity: 1;
+    visibility: visible; }
+
+.list-el--inner {
+  position: relative;
+  z-index: 1;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  cursor: pointer; }
+
+.list--inner {
   padding-left: 20px; }
 
-.list__el {
-  align-items: flex-end;
-  line-height: 2rem; }
-
-.list__el_opened {
-  background-color: #b4b0d8; }
-
-.list__el .icon {
-  width: 21px;
+.list-icon {
+  display: inline-block;
+  width: 14px;
   text-align: center;
-  font-size: 1.5rem;
-  margin-right: 10px;
-  margin-bottom: -1px;
+  font-size: 1.3rem;
+  margin-right: 15px;
   color: #7C73E6; }
-
-.list__el--name {
-  font-size: 1.2rem; }

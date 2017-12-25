@@ -11,21 +11,40 @@
 </head>
 <body>
   <aside class="sidebar">
-    <ul class="list">
-      <li class="list__el list__el_opened">
-        <span class="icon"><i class="fa fa-folder-open"></i></span>
-        <span class="list__el--name">Folder number one</span>
+
+    <ul>
+      <li>
+        <div class="list-el--outer">
+          <div class="list-el--inner"><span class="list-icon"><i class="fa fa-folder"></i></span>First element</div>
+        </div>
       </li>
-      <ul class="list list_inner">
-        <li class="list__el">
-          <span class="icon"><i class="fa fa-folder"></i></span>
-          <span class="list__el--name">First inner folder</span>
-        </li>
-        <li class="list__el">
-          <span class="icon"><i class="fa fa-file"></i></span>
-          <span class="list__el--name">Fire sample</span>
-        </li>
-      </ul>
+      <li>
+        <div class="list-el--outer">
+          <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Second element</div>
+        </div>
+      </li>
+      <li>
+        <div class="list-el--outer">
+          <div class="list-el--inner"><span class="list-icon"><i class="fa fa-folder-open"></i></span>Third element</div>
+        </div>
+        <ul class="list--inner">
+          <li>
+            <div class="list-el--outer">
+              <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner first</div>
+            </div>
+          </li>
+          <li>
+            <div class="list-el--outer">
+              <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner second</div>
+            </div>
+          </li>
+          <li>
+            <div class="list-el--outer">
+              <div class="list-el--inner"><span class="list-icon"><i class="fa fa-file"></i></span>Inner third</div>
+            </div>
+          </li>
+        </ul>
+      </li>
     </ul>
   </aside>
 </body>
