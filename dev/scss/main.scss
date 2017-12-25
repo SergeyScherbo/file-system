@@ -111,3 +111,23 @@ body {
   margin-top: 15px;
   color: #aaa;
 }
+
+.content {
+  margin-top: 30px;
+}
+
+.btn {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.btn--folder {
+  background-color: $icons;
+}
+
+.btn--file {
+  background-color: $sidebar;
+}

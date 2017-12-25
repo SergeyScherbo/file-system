@@ -122,3 +122,19 @@ body {
 .element-info {
   margin-top: 15px;
   color: #aaa; }
+
+.content {
+  margin-top: 30px; }
+
+.btn {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  font-size: 1rem;
+  color: #fff; }
+
+.btn--folder {
+  background-color: #7C73E6; }
+
+.btn--file {
+  background-color: #C4C1E0; }
